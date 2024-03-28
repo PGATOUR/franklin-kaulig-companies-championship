@@ -1,9 +1,9 @@
-# Your Project's Title...
-Your project's description...
+# PGA Kaulig Companies Championship
 
 ## Environments
-- Preview: https://main--franklin-the-players--pgatour.hlx.page/
-- Live: https://main--franklin-the-players--pgatour.hlx.live/
+- Preview: https://main--pga-kaulig-companies-championship--hlxsites.hlx.page/
+- Live: https://main--pga-kaulig-companies-championship--hlxsites.hlx.live/
+- Prod: https://www.kauligchampionship.com/
 
 ## Installation
 

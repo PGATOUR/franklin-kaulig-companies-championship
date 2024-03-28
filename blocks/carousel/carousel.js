@@ -67,7 +67,6 @@ async function insertCourseFeedSlides(block) {
     for (const hole of json.courses[0].holes) {
       const damSrc = `${damPrefix}/${code}${perm}/${courseId}/holes/hole${hole.holeNum}.jpg`;
       const holeJpg = `${cloudinaryPrefix},w_1290/v1/pgatour/courses/${code}${perm}/${courseId}/holes/hole${hole.holeNum}.jpg`;
-      const holePng = `${cloudinaryPrefix},w_150/holes_${config.year || new Date().getFullYear()}_${code}_${perm}_${courseId}_overhead_full_${hole.holeNum}.png`;
       // eslint-disable-next-line no-await-in-loop
       const metaresp = await fetchCors(`${damSrc}/jcr:content/metadata.json`);
       // eslint-disable-next-line no-await-in-loop
@@ -103,9 +102,6 @@ async function insertCourseFeedSlides(block) {
               <h3>PAR ${hole.par}, ${hole.yards} Yards</h3>
             </div>
             <p class="course-hole">
-              <picture>
-                <img src="${holePng}" alt="${metaTitle}" />
-              </picture>
             </p>
             <p>${metaDesc}</p>
           </div>
