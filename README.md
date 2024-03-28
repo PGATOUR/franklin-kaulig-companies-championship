@@ -1,8 +1,8 @@
 # PGA Kaulig Companies Championship
 
 ## Environments
-- Preview: https://main--pga-kaulig-companies-championship--hlxsites.hlx.page/
-- Live: https://main--pga-kaulig-companies-championship--hlxsites.hlx.live/
+- Preview: https://main--franklin-kaulig-companies-championship--pgatour.hlx.page/
+- Live: https://main--franklin-kaulig-companies-championship--pgatour.hlx.live/
 - Prod: https://www.kauligchampionship.com/
 
 ## Installation
