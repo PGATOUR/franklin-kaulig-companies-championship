@@ -27,6 +27,12 @@ function buildTwitterEmbed(url) {
   return `<blockquote class="twitter-tweet embed-twitter-wrapper"><a href="${url}"></a></blockquote>`;
 }
 
+function buildXEmbed(url) {
+  const newUrl = new URL(url);
+  newUrl.hostname = 'twitter.com';
+  return buildTwitterEmbed(newUrl);
+}
+
 function buildInstagramEmbed(url) {
   const endingSlash = url.pathname.endsWith('/') ? '' : '/';
   const location = window.location.href.endsWith('.html') ? window.location.href : `${window.location.href}.html`;
@@ -85,6 +91,8 @@ function loadEmbed(block) {
       a.outerHTML = buildYoutubeEmbed(url);
     } else if (hostname.includes('twitter')) {
       a.outerHTML = buildTwitterEmbed(url);
+    } else if (hostname === ('x.com')) {
+      a.outerHTML = buildXEmbed(url);
     } else if (hostname.includes('instagram')) {
       a.outerHTML = buildInstagramEmbed(url);
     } else if (hostname.includes('facebook')) {
