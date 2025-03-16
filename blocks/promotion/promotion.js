@@ -42,7 +42,7 @@ async function buildClock(block) {
     cdhour: countdown.hour,
     cdmin: countdown.minutes,
     offset: placeholders.eventOffset,
-    dst: '0',
+    dst: 'USA',
   }];
   const clock = document.createElement('div');
   clock.className = 'rolex-frame';
